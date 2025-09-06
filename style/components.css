@@ -2,41 +2,42 @@
 
 /* Icon */
 .icon {
-  &.small-4 {
-    width: 8px;
-    height: 8px;
-  }
+    &.small-4 {
+        width: 8px;
+        height: 8px;
+    }
 
-  &.small-3 {
-    width: 12px;
-    height: 12px;
-  }
+    &.small-3 {
+        width: 12px;
+        height: 12px;
+    }
 
-  &.small-2 {
-    width: 16px;
-    height: 16px;
-  }
+    &.small-2 {
+        width: 16px;
+        height: 16px;
+    }
 
-  &.small-1 {
-    width: 20px;
-    height: 20px;
-  }
+    &.small-1 {
+        width: 20px;
+        height: 20px;
+    }
 
-  &.normal {
-    width: 24px;
-    height: 24px;
-  }
+    &.normal {
+        width: 24px;
+        height: 24px;
+    }
 
-  &.large {
-    width: 32px;
-    height: 32px;
-  }
+    &.large {
+        width: 32px;
+        height: 32px;
+    }
 
-  &.extra-large {
-    width: 40px;
-    height: 40px;
-  }
+    &.extra-large {
+        width: 40px;
+        height: 40px;
+    }
 }
+
 /* End Icon */
 
 /* Navbar */
@@ -71,7 +72,7 @@
             font-size: 16px;
             text-decoration: none;
             border-radius: var(--border-radius-full);
-            
+
             &:hover {
                 background-color: var(--color-grey-50);
                 transition: background-color 200ms ease-in-out;
@@ -114,4 +115,5 @@
         stroke-dashoffset: -120;
     }
 }
+
 /* End Navbar */

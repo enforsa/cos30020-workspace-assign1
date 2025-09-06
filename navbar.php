@@ -36,8 +36,8 @@ function createNavbar()
                     </a>
 
                     <div class='navbar-actions-container'>
-                        " . createButton(ButtonSize::Normal, ButtonStyle::Filled, message: 'Post vacancy', href: 'postjobform.php') . "
-                        " . createButton(ButtonSize::Normal, ButtonStyle::Plain, icon: './style/phosphor-icons/magnifying-glass-bold.svg', href: 'searchjobform.php') . "
+                    " . createButton(ButtonSize::Normal, ButtonStyle::Plain, icon: './style/phosphor-icons/magnifying-glass-bold.svg', href: 'searchjobform.php') . "
+                    " . createButton(ButtonSize::Normal, ButtonStyle::Filled, message: 'Post vacancy', href: 'postjobform.php') . "
                     </div>
                 </div>
             </nav>
