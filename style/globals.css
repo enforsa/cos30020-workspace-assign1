@@ -1,0 +1,215 @@
+/* This file is needed to be able to embed the variables in ./style/components.css and style.css */
+
+:root {
+  --color-grey-25: #F9FAFDFF;
+  --color-grey-50: #F0F1F5FF;
+  --color-grey-100: #E7E8EDFF;
+  --color-grey-200: #CECFD5FF;
+  --color-grey-300: #B6B7BFFF;
+  --color-grey-400: #9D9EA7FF;
+  --color-grey-500: #84858FFF;
+  --color-grey-600: #73747EFF;
+  --color-grey-700: #61626CFF;
+  --color-grey-800: #50515BFF;
+  --color-grey-900: #3E3F49FF;
+  --color-grey-1000: #2D2E38FF;
+  --color-grey-1100: #1C1D27FF;
+
+  --color-red-25: #FFF1F1FF;
+  --color-red-50: #FFDFDFFF;
+  --color-red-100: #FFD1D1FF;
+  --color-red-200: #FF9D9DFF;
+  --color-red-300: #FF6F6FFF;
+  --color-red-400: #F04D4DFF;
+  --color-red-500: #D83434FF;
+  --color-red-600: #BC2D2DFF;
+  --color-red-700: #A02727FF;
+  --color-red-800: #842020FF;
+  --color-red-900: #681919FF;
+  --color-red-1000: #4C1212FF;
+  --color-red-1100: #300B0BFF;
+  --color-green-25: #F0FFF0FF;
+  --color-green-50: #D9FFD9FF;
+  --color-green-100: #CCFFCCFF;
+  --color-amber-25: #FFFDF0FF;
+  --color-amber-50: #FFF7D9FF;
+  --color-amber-100: #FFEECCFF;
+  --color-amber-200: #FCE2AEFF;
+  --color-amber-300: #FFD469FF;
+  --color-amber-400: #FFBF3EFF;
+  --color-amber-500: #E7A625FF;
+  --color-amber-600: #C99020FF;
+  --color-amber-700: #AB7B1BFF;
+  --color-amber-800: #8D6517FF;
+  --color-amber-900: #6F5012FF;
+  --color-amber-1000: #513A0DFF;
+  --color-amber-1100: #332508FF;
+
+  --color-green-200: #A3FEA3FF;
+  --color-green-300: #7BF47BFF;
+  --color-green-400: #5BE25BFF;
+  --color-green-500: #42CA42FF;
+  --color-green-600: #39B039FF;
+  --color-green-700: #319631FF;
+  --color-green-800: #287B28FF;
+  --color-green-900: #206120FF;
+  --color-green-1000: #174717FF;
+  --color-green-1100: #0F2C0FFF;
+
+  --color-blue-25: #F1F9FFFF;
+  --color-blue-50: #DDEEFFFF;
+  --color-blue-100: #D1E4FFFF;
+  --color-blue-200: #9DC7FFFF;
+  --color-blue-300: #69ABFFFF;
+  --color-blue-400: #3891FFFF;
+  --color-blue-500: #1E78EEFF;
+  --color-blue-600: #1A68CFFF;
+  --color-blue-700: #1659B0FF;
+  --color-blue-800: #124991FF;
+  --color-blue-900: #0E3A72FF;
+  --color-blue-1000: #0B2A53FF;
+  --color-blue-1100: #071A34FF;
+
+  --color-purple-25: #F7F1FFFF;
+  --color-purple-50: #EADDFFFF;
+  --color-purple-100: #E0D1FFFF;
+  --color-purple-200: #BE9DFFFF;
+  --color-purple-300: #A071FEFF;
+  --color-purple-400: #844FEEFF;
+  --color-purple-500: #6B36D6FF;
+  --color-purple-600: #5D2FBAFF;
+  --color-purple-700: #4F289EFF;
+  --color-purple-800: #412183FF;
+  --color-purple-900: #331A67FF;
+  --color-purple-1000: #25134BFF;
+  --color-pink-25: #FFF1FFFF;
+  --color-purple-1100: #180C2FFF;
+  --color-pink-50: #FFDDFFFF;
+  --color-pink-100: #FFD1FFFF;
+  --color-pink-200: #FF9DFFFF;
+  --color-pink-300: #FE71FEFF;
+  --color-pink-400: #EE4FEEFF;
+  --color-pink-500: #D636D6FF;
+  --color-pink-600: #BA2FBAFF;
+  --color-pink-700: #9E289EFF;
+  --color-pink-800: #832183FF;
+  --color-pink-900: #671A67FF;
+  --color-pink-1000: #4B134BFF;
+  --color-pink-1100: #2F0C2FFF;
+
+  --color-teal-25: #F0FFFFFF;
+  --color-teal-50: #D9FFFAFF;
+  --color-teal-100: #CCFFF1FF;
+  --color-teal-200: #95FFE0FF;
+  --color-teal-300: #6EFCCDFF;
+  --color-teal-400: #4EEDB8FF;
+  --color-teal-500: #36D6A1FF;
+  --color-teal-600: #2FBA8CFF;
+  --color-teal-700: #289E77FF;
+  --color-teal-800: #218362FF;
+  --color-teal-900: #1A674DFF;
+  --color-teal-1000: #134B38FF;
+  --color-teal-1100: #0C2F23FF;
+
+  --color-brown-25: #FFFBF0FF;
+  --color-brown-50: #FFF2D9FF;
+  --color-brown-100: #FDE8CCFF;
+  --color-brown-200: #F6D6A2FF;
+  --color-brown-300: #E8BD82FF;
+  --color-brown-400: #D6A765FF;
+  --color-brown-500: #BE8F4EFF;
+  --color-brown-600: #A57C44FF;
+  --color-brown-700: #8D6A3AFF;
+  --color-brown-800: #745730FF;
+  --color-brown-900: #5B4525FF;
+  --color-brown-1000: #43321BFF;
+  --color-brown-1100: #2A2011FF;
+
+  --color-orange-25: #FFF7EEFF;
+  --color-orange-50: #FFE9D5FF;
+  --color-orange-100: #FFDDC7FF;
+  --color-orange-200: #FFC095FF;
+  --color-orange-300: #FFA564FF;
+  --color-orange-400: #FA8C41FF;
+  --color-orange-500: #E2742AFF;
+  --color-orange-600: #C56525FF;
+  --color-orange-700: #A7561FFF;
+  --color-orange-800: #8A471AFF;
+  --color-orange-900: #6D3814FF;
+  --color-orange-1000: #4F290FFF;
+  --color-orange-1100: #321A09FF;
+
+  --color-background-primary: #FFFFFFFF;
+  --color-background-secondary: #F1F3F4FF;
+  --color-background-primary-blur: #FFFFFF03;
+
+  --color-text-primary: #000000FF;
+  --color-text-secondary: #3E3F49FF;
+  --color-text-tertiary: #73747EFF;
+  --color-text-quaternary: #B6B7BFFF;
+
+  --color-border-primary: #E9E9E9FF;
+  --color-border-hover: #CECFD5FF;
+  --color-border-active: #B6B7BFFF;
+
+  --color-button-primary-text: #FFFFFFFF;
+
+  --color-semantic-success: #1E78EEFF;
+  --color-semantic-info: #868686FF;
+  --color-semantic-warning: #E7A625FF;
+  --color-semantic-error: #D83434FF;
+
+  --opacity-10: 0.1;
+  --opacity-25: 0.25;
+  --opacity-40: 0.4;
+  --opacity-60: 0.6;
+  --opacity-80: 0.8;
+  --opacity-90: 0.9;
+
+  --font-fonts-switzer: Switzer;
+  --font-fonts-crimson-pro: Crimson Pro;
+
+  --font-font-weight-thin: 100px;
+  --font-font-weight-extralight: 200px;
+  --font-font-weight-light: 300px;
+  --font-font-weight-regular: 400px;
+  --font-font-weight-medium: 500px;
+  --font-font-weight-semibold: 600px;
+  --font-font-weight-bold: 700px;
+  --font-font-weight-extrabold: 800px;
+  --font-font-weight-black: 900px;
+
+  --font-font-size-small-3: 6px;
+  --font-font-size-small-2: 8px;
+  --font-font-size-small-1: 12px;
+  --font-font-size-paragraph: 16px;
+  --font-font-size-header-6: 20px;
+  --font-font-size-header-5: 28px;
+  --font-font-size-header-4: 38px;
+  --font-font-size-header-3: 50px;
+  --font-font-size-header-2: 68px;
+  --font-font-size-header-1: 90px;
+  --font-font-size-large-header: 120px;
+  --font-font-size-extra-large-header: 160px;
+
+  --border-radius-2: 2px;
+  --border-radius-6: 6px;
+  --border-radius-8: 8px;
+  --border-radius-10: 10px;
+  --border-radius-12: 12px;
+  --border-radius-14: 14px;
+  --border-radius-16: 16px;
+  --border-radius-24: 24px;
+  --border-radius-28: 28px;
+  --border-radius-32: 32px;
+  --border-radius-40: 40px;
+  --border-radius-full: 9999px;
+}
+
+/* Globals */
+html, body {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+}

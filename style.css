@@ -1,14 +1,4 @@
-:root {
-    
-}
-
-/* Globals */
-html, body {
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-}
+@import url('./style/globals.css');
 
 /* index.php */
 .effect-background-container {
@@ -33,6 +23,7 @@ html, body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 0.6;
     }
