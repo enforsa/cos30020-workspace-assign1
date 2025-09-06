@@ -13,6 +13,7 @@
         case Plain = 'plain';
         case Warning = 'warning';
         case Danger = 'danger';
+        case Text = 'text';
     }
 
     enum ButtonColor: string {
