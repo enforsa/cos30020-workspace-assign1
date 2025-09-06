@@ -7,7 +7,7 @@
         case Large = 'large';
     }
 
-    enum ButtonVariant: string {
+    enum ButtonStyle: string {
         case Filled = 'filled';
         case Shaded = 'shaded';
         case Plain = 'plain';
@@ -30,19 +30,19 @@
     }
     
 
-    function createButton($size = ButtonSize::Normal, $variant = ButtonVariant::Filled, $color = ButtonColor::Blue, $icon = '', $message = 'Button', $type = 'button', $href = '', $iconRight = false, $disabled = false) {
+    function createButton($size = ButtonSize::Normal, $style = ButtonStyle::Filled, $color = ButtonColor::Blue, $icon = '', $message = 'Button', $type = 'button', $href = '', $iconRight = false, $disabled = false) {
         $sizeValue = $size->value;
-        $variantValue = $variant->value;
-        $colourValue = $variant == ButtonVariant::Plain ? 'transparent' : $color->value;
+        $styleValue = $style->value;
+        $colourValue = $style == ButtonStyle::Plain ? 'transparent' : $color->value;
 
         $displayIcon = ($icon == null || $icon == '' || ctype_space($icon)) ? null : createIcon($icon, getButtonIconSize($size));
         $content = $iconRight ? "<span>$message</span>" . ($displayIcon ?? '') : ($displayIcon ?? '') . "<span>$message</span>";
 
         if($disabled) {
-            return "<button class='button $sizeValue $colourValue $variantValue' type='$type' disabled><a draggable='false'>$content</a></button>";
+            return "<button class='button $sizeValue $colourValue $styleValue' type='$type' disabled><a draggable='false'>$content</a></button>";
         }
 
-        return "<button class='button $sizeValue $colourValue $variantValue' type='$type'><a draggable='false' href='$href'>$content</a></button>";
+        return "<button class='button $sizeValue $colourValue $styleValue' type='$type'><a draggable='false' href='$href'>$content</a></button>";
     }
     function getButtonIconSize($buttonSize) {
        return match($buttonSize) {
