@@ -1,5 +1,21 @@
 @import url('./style/globals.css');
 
+.page-contents {
+    max-width: 944px;
+    margin: 0 auto;
+    border-left: 1px dashed var(--color-border-primary);
+    border-right: 1px dashed var(--color-border-primary);
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 56px;
+}
+
+/* index.php */
 .effect-background-container {
     opacity: 0;
     animation: effect-background-fade-in 2000ms linear 100ms 1 forwards;
@@ -29,56 +45,43 @@
     }
 }
 
-.page-contents {
-    max-width: 944px;
-    margin: 0 auto;
-    border-left: 1px dashed var(--color-border-primary);
-    border-right: 1px dashed var(--color-border-primary);
-    display: flex;
-    align-items: center;
-    gap: 56px;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding-top: 56px;
-    height: 100%;
-    width: 100%;
-}
-
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 8px;
-}
 
-h3, h6 {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-h3 {
-    font-weight: var(--font-weight-semibold);
-    position: relative;
-}
-
-h3 span {
-    position: relative;
-
-    svg {
-        position: absolute; 
-        left: 40%; 
-        transform: 
-        translateX(-40%); 
-        top: 100%; 
-        margin-top: -8px;
+    h3, h6 {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    h3 {
+        font-weight: var(--font-weight-semibold);
+        position: relative;
+    }
+    
+    h3 span {
+        position: relative;
+    
+        svg {
+            position: absolute; 
+            left: 40%; 
+            transform: 
+            translateX(-40%); 
+            top: 100%; 
+            margin-top: -8px;
+        }
+    }
+    
+    h6 {
+        margin-top: 16px;
+        font-weight: var(--font-weight-medium);
     }
 }
 
-h6 {
-    margin-top: 16px;
-}
 
 .underline-path {
     stroke-dasharray: 400;
@@ -91,10 +94,6 @@ h6 {
     to {
         stroke-dashoffset: 0;
     }
-}
-
-h6 {
-    font-weight: var(--font-weight-medium);
 }
 
 footer {
@@ -130,3 +129,59 @@ footer {
         max-width: 232px;
     }
 }
+/* End index.php */
+
+/* about.php */
+.about-contents-container {
+    max-width: 52.8%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 24px;
+
+    h4 {
+        margin: 0;
+        padding: 0;
+        font-weight: var(--font-weight-semibold);
+    }
+
+    h4 span {
+        position: relative;
+    
+        svg {
+            position: absolute; 
+            left: 20%; 
+            transform: translateX(-20%); 
+            top: 100%; 
+            margin-top: -4px;
+        }
+    }
+
+    h6 {
+        padding: 0;
+        margin: 0;
+        font-weight: var(--font-weight-semibold);
+    }
+
+    p {
+        margin: 16px 0 40px 0;
+        padding: 0;
+    }
+}
+
+.about-contents-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row ;
+    padding-top: 8px;
+    border-top: 1px dashed var(--color-border-primary);
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: var(--font-size-small-1);
+        color: var(--color-text-quaternary);
+    }
+}
+/* End about.php */
