@@ -30,20 +30,27 @@
     }
     
 
-    function createButton($size = ButtonSize::Normal, $style = ButtonStyle::Filled, $color = ButtonColor::Blue, $icon = '', $message = 'Button', $type = 'button', $href = '', $iconRight = false, $disabled = false) {
+    function createButton($size = ButtonSize::Normal, $style = ButtonStyle::Filled, $color = ButtonColor::Blue, $icon = '', $message = 'Button', $type = 'button', $href = '', $iconRight = false, $disabled = false, $iconOnly = false) {
         $sizeValue = $size->value;
         $styleValue = $style->value;
         $colourValue = $style == ButtonStyle::Plain ? 'transparent' : $color->value;
-
-        $displayIcon = ($icon == null || $icon == '' || ctype_space($icon)) ? null : createIcon($icon, getButtonIconSize($size));
-        $content = $iconRight ? "<span>$message</span>" . ($displayIcon ?? '') : ($displayIcon ?? '') . "<span>$message</span>";
-
-        if($disabled) {
-            return "<button class='button $sizeValue $colourValue $styleValue' type='$type' disabled><a draggable='false'>$content</a></button>";
+        
+        $displayIcon = ($icon != null && $icon != '' && !ctype_space($icon)) ? createIcon($icon, getButtonIconSize($size)) : '';
+        
+        if ($iconOnly) {
+            $content = $displayIcon;
+        } else {
+            $content = $iconRight ? "<span>$message</span>" . $displayIcon : $displayIcon . "<span>$message</span>";
         }
-
-        return "<button class='button $sizeValue $colourValue $styleValue' type='$type'><a draggable='false' href='$href'>$content</a></button>";
+        
+        $iconOnlyValue = $iconOnly ? 'icon-only' : '';
+        
+        if($disabled) {
+            return "<button class='button $sizeValue $colourValue $iconOnlyValue $styleValue' type='$type' disabled><a draggable='false'>$content</a></button>";
+        }
+        return "<button class='button $sizeValue $colourValue $iconOnlyValue $styleValue' type='$type'><a draggable='false' href='$href'>$content</a></button>";
     }
+
     function getButtonIconSize($buttonSize) {
        return match($buttonSize) {
             ButtonSize::Small => IconSize::Small2,

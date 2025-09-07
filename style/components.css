@@ -40,6 +40,290 @@
 
 /* End Icon */
 
+/* Button */
+.button {
+    border: none;
+    border-radius: var(--border-radius-full);
+    transition: background-color 200ms ease, border-color 200ms ease, color 100ms ease;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    white-space: nowrap;
+    font-weight: var(--font-weight-regular);
+}
+
+.button.small {
+    padding: 4px 12px;
+    font-size: var(--font-size-small-1);
+
+    &.icon-only {
+        padding: 4px;
+        border-radius: var(--border-radius-8);
+    }
+}
+
+.button.normal {
+    padding: 6px 16px;
+    font-size: var(--font-size-paragraph);
+
+    &.icon-only {
+        padding: 6px;
+        border-radius: var(--border-radius-12);
+    }
+}
+
+.button.large {
+    padding: 8px 20px;
+    gap: 8px;
+    font-size: var(--font-size-header-6);
+
+    &.icon-only {
+        padding: 8px;
+        border-radius: var(--border-radius-16);
+    }
+}
+
+.button.filled,
+.button.warning,
+.button.danger {
+    color: var(--color-button-primary-text);
+}
+
+/* Filled variant */
+.button.filled.grey {
+    background-color: var(--color-grey-500);
+}
+
+.button.filled.red {
+    background-color: var(--color-red-500);
+}
+
+.button.filled.green {
+    background-color: var(--color-green-500);
+}
+
+.button.filled.amber {
+    background-color: var(--color-amber-500);
+}
+
+.button.filled.blue {
+    background-color: var(--color-blue-500);
+}
+
+.button.filled.purple {
+    background-color: var(--color-purple-500);
+}
+
+.button.filled.pink {
+    background-color: var(--color-pink-500);
+}
+
+.button.filled.teal {
+    background-color: var(--color-teal-500);
+}
+
+.button.filled.brown {
+    background-color: var(--color-brown-500);
+}
+
+.button.filled.orange {
+    background-color: var(--color-orange-500);
+}
+
+.button.filled:hover.grey {
+    background-color: var(--color-grey-400);
+}
+
+.button.filled:hover.red {
+    background-color: var(--color-red-400);
+}
+
+.button.filled:hover.green {
+    background-color: var(--color-green-400);
+}
+
+.button.filled:hover.amber {
+    background-color: var(--color-amber-400);
+}
+
+.button.filled:hover.blue {
+    background-color: var(--color-blue-400);
+}
+
+.button.filled:hover.purple {
+    background-color: var(--color-purple-400);
+}
+
+.button.filled:hover.pink {
+    background-color: var(--color-pink-400);
+}
+
+.button.filled:hover.teal {
+    background-color: var(--color-teal-400);
+}
+
+.button.filled:hover.brown {
+    background-color: var(--color-brown-400);
+}
+
+.button.filled:hover.orange {
+    background-color: var(--color-orange-400);
+}
+
+/* Shaded variant */
+.button.shaded.grey {
+    background-color: var(--color-grey-200);
+    color: var(--color-grey-500);
+}
+
+.button.shaded.red {
+    background-color: var(--color-red-200);
+    color: var(--color-red-500);
+}
+
+.button.shaded.green {
+    background-color: var(--color-green-200);
+    color: var(--color-green-500);
+}
+
+.button.shaded.amber {
+    background-color: var(--color-amber-200);
+    color: var(--color-amber-500);
+}
+
+.button.shaded.blue {
+    background-color: var(--color-blue-200);
+    color: var(--color-blue-500);
+}
+
+.button.shaded.purple {
+    background-color: var(--color-purple-200);
+    color: var(--color-purple-500);
+}
+
+.button.shaded.pink {
+    background-color: var(--color-pink-200);
+    color: var(--color-pink-500);
+}
+
+.button.shaded.teal {
+    background-color: var(--color-teal-200);
+    color: var(--color-teal-500);
+}
+
+.button.shaded.brown {
+    background-color: var(--color-brown-200);
+    color: var(--color-brown-500);
+}
+
+.button.shaded.orange {
+    background-color: var(--color-orange-200);
+    color: var(--color-orange-500);
+}
+
+.button.shaded:hover.grey {
+    background-color: var(--color-grey-100);
+}
+
+.button.shaded:hover.red {
+    background-color: var(--color-red-100);
+}
+
+.button.shaded:hover.green {
+    background-color: var(--color-green-100);
+}
+
+.button.shaded:hover.amber {
+    background-color: var(--color-amber-100);
+}
+
+.button.shaded:hover.blue {
+    background-color: var(--color-blue-100);
+}
+
+.button.shaded:hover.purple {
+    background-color: var(--color-purple-100);
+}
+
+.button.shaded:hover.pink {
+    background-color: var(--color-pink-100);
+}
+
+.button.shaded:hover.teal {
+    background-color: var(--color-teal-100);
+}
+
+.button.shaded:hover.brown {
+    background-color: var(--color-brown-100);
+}
+
+.button.shaded:hover.orange {
+    background-color: var(--color-orange-100);
+}
+
+/* Plain variant */
+.button.plain {
+    background-color: transparent;
+    color: var(--color-plain-text);
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.button.plain:hover {
+    border-color: var(--color-grey-100);
+}
+
+.button.plain:not(:disabled):active {
+    color: var(--color-grey-600);
+}
+
+.button.warning {
+    background-color: var(--color-semantic-warning);
+    color: var(--color-button-primary-text);
+}
+
+.button.warning:hover {
+    background-color: var(--color-amber-500);
+}
+
+/* Danger variant (with wiggle) */
+.button.danger {
+    background-color: var(--color-red-600);
+    color: var(--color-button-primary-text);
+    transition: background-color 200ms ease, max-width 1s;
+}
+
+.button.danger:hover {
+    background-color: var(--color-red-500);
+    animation: danger-wiggle 100ms infinite linear;
+}
+
+/* Disabled state */
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+@keyframes danger-wiggle {
+    0% {
+        transform: translate(0.5px, 0.2px);
+    }
+
+    50% {
+        transform: translate(-1px, -0.2px);
+    }
+
+    100% {
+        transform: translate(0.5px, 0.4px);
+    }
+}
+
+/* End Button */
+
 /* Navbar */
 .navbar {
     width: 100%;
@@ -72,6 +356,7 @@
             font-size: 16px;
             text-decoration: none;
             border-radius: var(--border-radius-full);
+            color: var(--color-text-primary);
 
             &:hover {
                 background-color: var(--color-grey-50);
@@ -99,6 +384,13 @@
                 animation: strokeCycle 1s ease-out forwards;
             }
         }
+
+        .navbar-actions-container {
+            display: inline-flex;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
@@ -117,3 +409,205 @@
 }
 
 /* End Navbar */
+
+/* Badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: var(--border-radius-full);
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+
+    p {
+        padding: 0;
+        margin: 0 !important;
+        opacity: 1 !important;
+    }
+
+    &.small {
+        padding: 2px 6px 2px 6px;
+        gap: 2px;
+
+        p {
+            font-size: var(--font-size-small-2) !important;
+        }
+
+        .icon {
+            height: 8px;
+            width: 8px;
+        }
+    }
+
+    &.normal {
+        padding: 3px 8px 3px 8px;
+        gap: 4px;
+
+        p {
+            font-size: var(--font-size-small-1) !important;
+        }
+
+        .icon {
+            height: 12px;
+        }
+    }
+
+    &.large {
+        gap: 6px;
+        padding: 4px 12px 4px 12px;
+
+        p {
+            font-size: var(--font-size-paragraph) !important;
+        }
+
+        .icon {
+            height: 16px;
+        }
+    }
+}
+
+.badge.filled {
+    color: var(--color-text-white);
+}
+
+.badge.filled.grey {
+    background-color: var(--color-grey-500)
+}
+
+.badge.filled.red {
+    background-color: var(--color-red-500)
+}
+
+.badge.filled.green {
+    background-color: var(--color-green-500)
+}
+
+.badge.filled.amber {
+    background-color: var(--color-amber-500)
+}
+
+.badge.filled.blue {
+    background-color: var(--color-blue-500)
+}
+
+.badge.filled.purple {
+    background-color: var(--color-purple-500)
+}
+
+.badge.filled.pink {
+    background-color: var(--color-pink-500)
+}
+
+.badge.filled.teal {
+    background-color: var(--color-teal-500)
+}
+
+.badge.filled.brown {
+    background-color: var(--color-brown-500)
+}
+
+.badge.filled.orange {
+    background-color: var(--color-orange-500)
+}
+
+.badge.shaded.grey {
+    background-color: var(--color-grey-100);
+    color: var(--color-grey-500);
+
+    p,
+    .icon {
+        color: var(--color-grey-500) !important;
+    }
+}
+
+.badge.shaded.red {
+    background-color: var(--color-red-100);
+    color: var(--color-red-500);
+
+    p,
+    .icon {
+        color: var(--color-red-500) !important;
+    }
+}
+
+.badge.shaded.green {
+    background-color: var(--color-green-100);
+    color: var(--color-green-500);
+
+    p,
+    .icon {
+        color: var(--color-green-500) !important;
+    }
+}
+
+.badge.shaded.amber {
+    background-color: var(--color-amber-100);
+
+    p,
+    .icon {
+        color: var(--color-amber-500) !important;
+    }
+}
+
+.badge.shaded.blue {
+    background-color: var(--color-blue-100);
+    color: var(--color-blue-500);
+
+    p,
+    .icon {
+        color: var(--color-blue-500) !important;
+    }
+}
+
+.badge.shaded.purple {
+    background-color: var(--color-purple-100);
+    color: var(--color-purple-500);
+
+    p,
+    .icon {
+        color: var(--color-purple-500) !important;
+    }
+}
+
+.badge.shaded.pink {
+    background-color: var(--color-pink-100);
+    color: var(--color-pink-500);
+
+    p,
+    .icon {
+        color: var(--color-pink-500) !important;
+    }
+}
+
+.badge.shaded.teal {
+    background-color: var(--color-teal-100);
+    color: var(--color-teal-500);
+
+    p,
+    .icon {
+        color: var(--color-teal-500) !important;
+    }
+}
+
+.badge.shaded.brown {
+    background-color: var(--color-brown-100);
+    color: var(--color-brown-500);
+
+    p,
+    .icon {
+        color: var(--color-brown-500) !important;
+    }
+}
+
+.badge.shaded.orange {
+    background-color: var(--color-orange-100);
+    color: var(--color-orange-500);
+
+    p,
+    .icon {
+        color: var(--color-orange-500) !important;
+    }
+}
+
+/* End Badge */
