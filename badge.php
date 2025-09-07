@@ -35,9 +35,10 @@
         $sizeValue = $size->value;
         $colourValue = $color->value;
         $styleValue = $style->value;
+        
         // Check to see if icon is empty, null, or has whitespace(s), if yes then don't display icon
-        $displayIcon = ($icon == null || $icon == '' || ctype_space($icon)) ? null : getBadgeIconSize($size);
-
+        $displayIcon = ($icon == null || $icon == '' || ctype_space($icon)) ? '' : createIcon(getBadgeIconSize($size), $icon);
+        
         return "<div class='badge $sizeValue $colourValue $styleValue'>$displayIcon<p>$message</p></div>";
     }
 
