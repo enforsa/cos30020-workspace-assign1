@@ -13,7 +13,7 @@ require_once 'checkbox.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post job vacancy</title>
+    <title>Workspace | Post Job Vacancy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./style/components.css">
 </head>
@@ -32,7 +32,7 @@ require_once 'checkbox.php';
         <form class="post-vacancy-form" action="postjobprocess.php" method="POST">
             <?php
             echo createInput('text', 'position-id', 5, InputSize::Normal, 'Enter position ID', '[A-Z]{2}\d{3}', true, false, 'Position ID');
-            echo createInput('text', 'title', 0, InputSize::Normal, 'Enter title', '[a-zA-Z0-9 ,.!]{1,20}', true, false, 'Title');
+            echo createInput('text', 'title', 20, InputSize::Normal, 'Enter title', '[a-zA-Z0-9 ,.!]{1,20}', true, false, 'Title');
             echo createInput('text', 'closing-date', 0, InputSize::Normal, 'Enter closing date (e.g 08/06/25)', '(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[0-2])\/\d{2}', true, false, 'Closing Date');
             echo createTextarea('description' ,  100, TextareaSize::Normal, 'Enter description', true, false, 'Description', '', ResizeOptions::Vertical);
             ?>
