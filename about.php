@@ -11,6 +11,7 @@ require_once 'badge.php';
     <title>About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./style/components.css">
+    <link rel="icon" type="image/svg" href="./style/favicon.svg">
 </head>
 
 <body>

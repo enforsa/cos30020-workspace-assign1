@@ -378,7 +378,11 @@
     }
 
 
-    svg {
+    .workspace-logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
         user-select: none;
 
         path[stroke] {
@@ -387,7 +391,7 @@
         }
     }
 
-    svg:hover {
+    .workspace-logo-container:hover {
         path[stroke] {
             animation: strokeCycle 1s ease-out forwards;
         }

@@ -13,6 +13,8 @@ require_once 'badge.php';
 
     <!-- FOR SOME REASON I HAVE TO DO IT LIKE THIS, EVERY OTHER METOD OF STYLING DOES NOT WORK -->
     <link rel="stylesheet" href="./style/components.css">
+
+    <link rel="icon" type="image/svg" href="./style/favicon.svg">
 </head>
 
 <body>
