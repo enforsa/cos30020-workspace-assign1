@@ -14,8 +14,9 @@ require_once 'badge.php';
 </head>
 
 <body>
+    <?php echo createNavbar(); ?>
+    
     <section class="page-contents about">
-        <?php echo createNavbar(); ?>
         <div class="about-contents-container">
             <h4>
                 <span>

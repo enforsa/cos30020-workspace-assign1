@@ -34,7 +34,7 @@
         $sizeValue = $size->value;
         $styleValue = $style->value;
         $colourValue = $style == ButtonStyle::Plain ? 'transparent' : $color->value;
-        
+
         $displayIcon = ($icon != null && $icon != '' && !ctype_space($icon)) ? createIcon($icon, getButtonIconSize($size)) : '';
         
         if ($iconOnly) {
@@ -48,7 +48,9 @@
         if($disabled) {
             return "<button class='button $sizeValue $colourValue $iconOnlyValue $styleValue' type='$type' disabled><a draggable='false'>$content</a></button>";
         }
-        return "<button class='button $sizeValue $colourValue $iconOnlyValue $styleValue' type='$type'><a draggable='false' href='$href'>$content</a></button>";
+
+        $displayInner = $type == 'button' ? "<a draggable='false' href='$href'>$content</a>" : $content;
+        return "<button class='button $sizeValue $colourValue $iconOnlyValue $styleValue' type='$type'>$displayInner</button>";
     }
 
     function getButtonIconSize($buttonSize) {

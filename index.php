@@ -16,9 +16,9 @@ require_once 'badge.php';
 </head>
 
 <body>
+    <?php echo createNavbar(); ?>
     
     <section class="page-contents">
-        <?php echo createNavbar(); ?>
         <header>
             <div class='badge normal blue shaded'>
                 <p>Advanced search now live</p>

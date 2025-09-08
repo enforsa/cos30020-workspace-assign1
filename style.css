@@ -13,6 +13,7 @@
     height: 100%;
     width: 100%;
     padding-bottom: 56px;
+    padding-top: 104px;
 }
 
 /* index.php */
@@ -136,7 +137,6 @@ footer {
     max-width: 52.8%;
     width: 100%;
     margin: 0 auto;
-    padding-top: 24px;
 
     h4 {
         margin: 0;
@@ -175,6 +175,7 @@ footer {
     align-items: center;
     flex-direction: row ;
     padding-top: 8px;
+    padding-bottom: 56px;
     border-top: 1px dashed var(--color-border-primary);
 
     p {
@@ -185,3 +186,72 @@ footer {
     }
 }
 /* End about.php */
+
+/* postjobform.php */
+.page-contents.post-vacancy {
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.post-vacancy-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 0 56px 16px;
+    border-bottom: 1px dashed var(--color-border-primary);
+
+    h3 {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        font-weight: var(--font-weight-semibold);
+
+        svg {
+            color: var(--color-brown-500);
+        }
+    }
+
+    h6 {
+        padding: 0;
+        margin: 0;
+        font-weight: var(--font-weight-medium);
+    }
+}
+
+.post-vacancy-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 0 12px 56px 12px;
+    width: 100%;
+    box-sizing: border-box;
+
+    #post-vacancy-form-footer {
+        margin-top: 32px;
+        width: 100%;
+        background: linear-gradient(180deg, var(--color-background-primary-blur, rgba(255, 255, 255, 0.01)) 0%, var(--color-background-primary, #FFF) 100%);
+        backdrop-filter: blur(1px);
+        padding: 8px 0;
+        position: sticky;
+        bottom: 0;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#input-selectors-container {
+    display: grid;
+    row-gap: 40px;
+    column-gap: 64px;
+    align-self: stretch;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
