@@ -820,3 +820,55 @@
     }
 }
 /* End Textarea */
+
+/* Search */
+.search {
+    display: flex;
+    gap: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 12px;
+    font-size: var(--font-size-paragraph);
+    border: 1px solid var(--color-border-primary);
+    border-radius: var(--border-radius-full, 9999px);
+    background: var(--color-grey-25, #F9FAFD);
+    box-shadow: 0 0 8px 0 #FFF inset;
+    max-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--color-text-primary);
+
+    ::placeholder {
+        font-size: var(--font-size-paragraph);
+        color: var(--color-text-quaternary);
+    }
+
+    &:hover {
+        border-color: var(--color-border-hover);
+        cursor: text;
+    }
+
+    &:active,
+    &:focus {
+        background-color: transparent;
+        border-color: var(--color-border-active);
+        outline: none;
+    }
+
+    svg {
+        color: var(--color-text-quaternary);
+    }
+
+    input {
+        background: none;
+        border: none;
+        width: 100%;
+        box-sizing: border-box;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+/* End Search */

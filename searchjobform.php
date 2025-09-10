@@ -1,6 +1,7 @@
 <?php
 require_once 'navbar.php';
 require_once 'icon.php';
+require_once 'search.php';  
 ?>
 
 <html lang="en">
@@ -23,6 +24,14 @@ require_once 'icon.php';
                 Search
             </h3>
             <h6>Find job vacancies with a single click,<br>search below to get started ✨</h6>
+            
+            <div id="search-job-actions-container">
+                <?php echo createSearch('q', 'Search jobs') ?>
+                <a href="#">
+                    <?php echo createIcon('./style/phosphor-icons/sparkle-fill.svg', IconSize::Small2) ?>
+                    Try Advanced Search
+                </a>
+            </div>
         </div>
     </section>
 </body>
