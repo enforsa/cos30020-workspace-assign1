@@ -12,7 +12,8 @@
         $maxLength = $maxLength == 0 ? '' : "maxlength=$maxLength";
         $required = $required == true ? 'required' : '';
         $disabled = $disabled == true ? 'disabled' : '';
-        $attributes = "type='$type' name='$name' $maxLength placeholder='$placeholder' pattern='$pattern' $required $disabled";
+        $patternAttr = $pattern != '' ? "pattern=$pattern" : ''; 
+        $attributes = "type='$type' name='$name' $maxLength placeholder='$placeholder' $patternAttr $required $disabled";
         
         return "<div class='input $sizeVaue'>" . createLabel($label, $name) . "<input $attributes></input></div>";
     }

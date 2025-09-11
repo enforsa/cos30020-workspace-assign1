@@ -48,6 +48,11 @@ require_once 'badge.php';
                 <?php echo createIcon('./style/phosphor-icons/identification-card-fill.svg', IconSize::Small2); ?>
                 105918373
             </div>
+
+            <div class="aa-email">
+                <?php echo createIcon('./style/phosphor-icons/identification-card-fill.svg', IconSize::Small2); ?>
+                105918373@student.swin.edu.au
+            </div>
         </div>
         <!-- <a class='workspace-logo-container' href='index.php'>
             <svg width='127' height='22' viewBox='0 0 127 22' fill='none' xmlns='http://www.w3.org/2000/svg'>

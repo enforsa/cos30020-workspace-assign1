@@ -1,5 +1,9 @@
 <?php
-    function createCheckbox($label = "", $name = "", $value = "") {
-        return "<div class='checkbox'><input type='checkbox' name='$name' id='$value'><label for='$value'>$label</label></div>";
-    }
+function createCheckbox($id = '', $name = '', $value = '', $message = '')
+{
+    return "<div class='checkbox'>
+        <input id='$id' name='$name' type='checkbox' value='$value'>
+        <label for='$id'>$message</label>
+    </div>";
+}
 ?>

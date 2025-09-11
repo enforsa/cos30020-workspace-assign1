@@ -6,8 +6,10 @@ require_once 'input.php';
 require_once 'textarea.php';
 require_once 'radio.php';
 require_once 'checkbox.php';
-?>
 
+// Get current date in dd/mm/yy format
+$currentDate = date('d/m/y');
+?>
 <html lang="en">
 
 <head>
@@ -21,7 +23,6 @@ require_once 'checkbox.php';
 
 <body>
     <?php echo createNavbar(); ?>
-
     <section class="page-contents post-vacancy">
         <div class="post-vacancy-header">
             <h3>
@@ -32,49 +33,50 @@ require_once 'checkbox.php';
         </div>
         <form class="post-vacancy-form" action="postjobprocess.php" method="POST">
             <?php
-            echo createInput('text', 'position-id', 5, InputSize::Normal, 'Enter position ID', '[A-Z]{2}\d{3}', true, false, 'Position ID');
+            echo createInput('text', 'position-id', 5, InputSize::Normal, 'Enter position ID (e.g. AB123)', '', true, false, 'Position ID');
             echo createInput('text', 'title', 20, InputSize::Normal, 'Enter title', '[a-zA-Z0-9 ,.!]{1,20}', true, false, 'Title');
-            echo createInput('text', 'closing-date', 0, InputSize::Normal, 'Enter closing date (e.g 08/06/25)', '(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[0-2])\/\d{2}', true, false, 'Closing Date');
-            echo createTextarea('description' ,  100, TextareaSize::Normal, 'Enter description', true, false, 'Description', '', ResizeOptions::Vertical);
+            echo createTextarea('description', 100, TextareaSize::Normal, 'Enter description', true, false, 'Description', '', ResizeOptions::Vertical);
             ?>
 
             <div id="input-selectors-container">
                 <div class="vacancy-input-group">
                     <label>Position</label>
-                    <?php 
-                    echo createRadio("Full-time", "position", "full-time");
-                    echo createRadio("Part-time", "position", "part-time");
+                    <?php
+                    echo createRadio("position-fulltime", "position", "Full Time", "Full Time");
+                    echo createRadio("position-parttime", "position", "Part Time", "Part Time");
                     ?>
                 </div>
-    
+
                 <div class="vacancy-input-group">
                     <label>Contract</label>
-                    <?php 
-                    echo createRadio("On-going", "contract", "on-going");
-                    echo createRadio("Fixed term", "contract", "fixed-term");
+                    <?php
+                    echo createRadio("contract-ongoing", "contract", "On-going", "On-going");
+                    echo createRadio("contract-fixed", "contract", "Fixed term", "Fixed term");
                     ?>
                 </div>
-    
+
                 <div class="vacancy-input-group">
                     <label>Location</label>
-                    <?php 
-                    echo createRadio("On-site", "location", "on-site");
-                    echo createRadio("Remote", "location", "remote");
+                    <?php
+                    echo createRadio("location-onsite", "location", "On-site", "On-site");
+                    echo createRadio("location-remote", "location", "Remote", "Remote");
                     ?>
                 </div>
 
                 <div class="vacancy-input-group">
                     <label>Accept application by</label>
-                    <?php 
-                    echo createCheckbox("On-site", "accept-application-by", "post");
-                    echo createCheckbox("email", "accept-application-by", "email");
+                    <?php
+                    echo createCheckbox("accept-post", "accept-application-by[]", "Post", "Post");
+                    echo createCheckbox("accept-email", "accept-application-by[]", "Email", "Email");
                     ?>
                 </div>
             </div>
+
             <div id="post-vacancy-form-footer">
-                <?php echo createButton(ButtonSize::Normal, ButtonStyle::Filled, ButtonColor::Blue, './style/phosphor-icons/rocket-launch-fill.svg', 'Submit vacancy', 'submit', '', false, false, false); ?>
+                <?php echo createButton(ButtonSize::Normal, ButtonStyle::Filled, ButtonColor::Blue, './style/phosphor-icons/rocket-launch-fill.svg', 'Submit vacancy', 'submit'); ?>
             </div>
         </form>
+
     </section>
 </body>
 

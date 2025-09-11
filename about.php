@@ -29,7 +29,7 @@ require_once 'badge.php';
                     About
                 </span>
             </h4>
-            <p>Workspace developed and designed entirely by me - Aldin Alagic! <br><br>PHP v2.9 has been utilised to develop Workspace. With the development of Workspace I have tried my best to attempt all listed objectives provided by the assignment specification.
+            <p>Workspace developed and designed entirely by me - Aldin Alagic! <br><br>PHP v<?php echo phpversion(); ?> has been utilised to develop Workspace. With the development of Workspace I have tried my best to attempt all listed objectives provided by the assignment specification.
             </p>
 
             <h6>Discussion Points</h6>
